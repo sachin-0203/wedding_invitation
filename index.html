@@ -5184,8 +5184,8 @@
   </noscript>
   <audio id="background-music" src="./ganesh-ji-invitation.mp3" loop preload="auto"></audio>
   <button id="music-toggle" type="button" aria-label="Play background music"
-    style="position:fixed;right:1rem;bottom:1rem;z-index:10000;border:1px solid #d9a441;border-radius:9999px;background:#160408;color:#f9ecc8;padding:.7rem 1rem;font:600 14px system-ui;cursor:pointer;box-shadow:0 4px 16px #0008">
-    ♫ Play music
+    style="position:fixed;right:1rem;top:1rem;z-index:10000;border:1px solid #d9a441;border-radius:9999px;background:#160408;color:#f9ecc8;padding:.65rem;font:600 20px/1 system-ui;cursor:pointer;box-shadow:0 4px 16px #0008">
+    🔇
   </button>
   <script>
     (() => {
@@ -5193,7 +5193,7 @@
       const button = document.getElementById("music-toggle");
       const updateButton = () => {
         const playing = !audio.paused;
-        button.textContent = playing ? "♫ Pause music" : "♫ Play music";
+        button.textContent = playing ? "🔊" : "🔇";
         button.setAttribute("aria-label", playing ? "Pause background music" : "Play background music");
       };
       const playMusic = () => {
